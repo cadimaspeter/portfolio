@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lead Pipeline & CRM Cleanup — Case Study | Peter Cadimas</title>
+<meta name="description" content="A CRM organization, lead pipeline optimization, and sales-process improvement case study by Peter Cadimas.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<meta name="theme-color" content="#0B1220">
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- styles: shared first, page-specific last -->
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/motion.css">
+<link rel="stylesheet" href="css/case-study.css">
+
+<!-- flags JS as available + failsafe that lifts the loading cover after 6s -->
+<script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('fallback')},6000);</script>
+
+<!-- scripts: libraries, then our modules (order matters) -->
+<script defer src="js/vendor/gsap.min.js"></script>
+<script defer src="js/vendor/ScrollTrigger.min.js"></script>
+<script defer src="js/vendor/SplitText.min.js"></script>
+<script defer src="js/vendor/CustomEase.min.js"></script>
+<script defer src="js/vendor/lenis.min.js"></script>
+<script defer src="js/config.js"></script>
+<script defer src="js/core.js"></script>
+<script defer src="js/page-transition.js"></script>
+<script defer src="js/preloader.js"></script>
+<script defer src="js/text-reveal.js"></script>
+<script defer src="js/scroll-effects.js"></script>
+<script defer src="js/interactions.js"></script>
+<script defer src="js/carousel.js"></script>
+<script defer src="js/main.js"></script>
+</head>
+<body class="cs-page">
+<header class="site-header">
+  <nav class="site-nav wrap" aria-label="Main">
+    <a class="logo" href="index.html"><img src="assets/img/avatar.jpg" class="avatar" alt="Peter Cadimas" width="36" height="36">PETER CADIMAS</a>
+    <a href="index.html#work" class="back-link">← BACK TO WORK</a>
+  </nav>
+</header>
+<main>
+<!-- HERO -->
+<section class="cs-hero"><div aria-hidden="true" class="glow" data-parallax="14"></div>
+<div class="content">
+<div class="eyebrow">
+        CASE STUDY 04 / CRM &amp; LEAD PIPELINE OPERATIONS
+      </div>
+<h1>
+        Lead Pipeline &amp; CRM Cleanup — building a cleaner, more actionable sales system.
+      </h1>
+<p class="lede">
+        A six-month operational engagement transforming a real estate lead database
+        into a standardized, visible, and follow-up-ready CRM pipeline.
+      </p>
+<div class="cs-tags">
+<span class="cs-tag">REAL ESTATE</span>
+<span class="cs-tag">CRM CLEANUP</span>
+<span class="cs-tag">LEAD PIPELINE</span>
+<span class="cs-tag">SALES OPERATIONS</span>
+<span class="cs-tag">BREVO</span>
+</div>
+<div class="nda-note">
+<strong>Client Confidentiality Notice</strong><br/>
+        This project was completed for an NDA-protected client. Company name,
+        website, customer data, lead information, and revenue figures have been
+        withheld or generalized to protect confidentiality. The scope of work,
+        process, and reported figures reflect actual project data.
+      </div>
+</div>
+<div class="snapshot">
+<div class="snapshot-grid">
+<div class="snap-cell">
+<div class="label">Client</div>
+<div class="val">NDA / Confidential</div>
+</div>
+<div class="snap-cell">
+<div class="label">Industry</div>
+<div class="val">Real Estate</div>
+</div>
+<div class="snap-cell">
+<div class="label">CRM</div>
+<div class="val">Brevo</div>
+</div>
+<div class="snap-cell">
+<div class="label">Duration</div>
+<div class="val">6 Months</div>
+</div>
+<div class="snap-cell">
+<div class="label">Results</div>
+<div class="val">Stronger Ops Foundation</div>
+</div>
+</div>
+</div></section>
+<!-- SNAPSHOT -->
+
+<!-- 01 OVERVIEW -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">01</span>
+<h2>Project Overview</h2>
+<p>
+        This project focused on transforming an existing CRM into a more
+        organized, usable, and actionable lead-management system for a
+        real estate business. The objective was not simply to organize
+        records — it was to improve the business's ability to understand
+        where leads stood, what needed attention, and what action should
+        happen next.
+      </p>
+<p>
+        As the Customer Relationship Manager on this engagement, the scope
+        covered CRM organization, data cleanup, pipeline structuring, and
+        lead-tracking standardization within Brevo.
+      </p>
+</div>
+</section>
+<!-- 02 CHALLENGE -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">02</span>
+<h2>The Challenge</h2>
+<p>
+        The existing CRM contained valuable lead information, but the data
+        and pipeline structure could be refined to make lead management
+        more consistent, visible, and actionable.
+      </p>
+<ul>
+<li>Inconsistent lead information across records</li>
+<li>Duplicate or incomplete contact entries</li>
+<li>Leads without clear or consistent statuses</li>
+<li>Leads sitting in inappropriate pipeline stages</li>
+<li>Inconsistent naming conventions</li>
+<li>Missing contact information</li>
+<li>Unclear ownership of individual leads</li>
+<li>Difficulty distinguishing active leads from stale ones</li>
+<li>Inconsistent follow-up processes</li>
+<li>Lack of standardized CRM fields</li>
+<li>Limited pipeline visibility for reporting</li>
+</ul>
+<blockquote>
+        The existing CRM contained valuable lead information, but the data
+        and pipeline structure could be refined to make lead management
+        more consistent, visible, and actionable.
+      </blockquote>
+</div>
+</section>
+<!-- 03 CRM AUDIT -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">03</span>
+<h2>CRM Audit</h2>
+<p>
+        Before any cleanup began, the CRM was fully audited across three
+        layers: lead records, pipeline structure, and data quality.
+      </p>
+<div class="audit-card">
+<h3>Lead Records</h3>
+<p>
+          Reviewed contact names, emails, phone numbers, company information,
+          lead source, lead status, assigned owner, notes, activity history,
+          missing information, and duplicate records.
+        </p>
+</div>
+<div class="audit-card">
+<h3>Pipeline</h3>
+<p>
+          Reviewed pipeline stages, leads within each stage, incorrectly
+          categorized leads, stale opportunities, leads requiring follow-up,
+          already-converted leads, and inactive leads.
+        </p>
+</div>
+<div class="audit-card">
+<h3>Data Quality</h3>
+<p>
+          Analyzed duplicate records, missing fields, inconsistent formatting,
+          outdated information, incomplete records, incorrect statuses, and
+          inconsistent tags or categories.
+        </p>
+</div>
+<div class="audit-card">
+<h3>Audit Findings</h3>
+<div class="kpi-row">
+<div class="kpi">
+<div class="k-label">Total Records Reviewed</div>
+<div class="k-val">18,349</div>
+</div>
+<div class="kpi">
+<div class="k-label">Duplicate Records</div>
+<div class="k-val">1,214</div>
+</div>
+<div class="kpi">
+<div class="k-label">Incomplete Records</div>
+<div class="k-val">17,698</div>
+</div>
+<div class="kpi">
+<div class="k-label">Outdated Records</div>
+<div class="k-val">502</div>
+</div>
+<div class="kpi">
+<div class="k-label">Active Leads</div>
+<div class="k-val">12,553</div>
+</div>
+<div class="kpi">
+<div class="k-label">Leads Needing Follow-Up</div>
+<div class="k-val">11,204</div>
+</div>
+<div class="kpi">
+<div class="k-label">Records Standardized</div>
+<div class="k-val">15,230</div>
+</div>
+</div>
+</div>
+<div class="visual-slot">
+<div class="v-label">Suggested Visual</div>
+<div class="v-desc">
+          Redacted CRM screenshot showing the audit view — names, emails, and
+          deal values blurred or cropped out.
+        </div>
+</div>
+</div>
+</section>
+<!-- 04 DATA CLEANUP -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">04</span>
+<h2>Lead Data Cleanup</h2>
+<p>
+        CRM records were reviewed and organized with the goal of preserving
+        valuable lead information while improving overall data quality.
+      </p>
+<ul>
+<li>Identifying duplicate contacts</li>
+<li>Consolidating duplicate information into single records</li>
+<li>Standardizing names and contact information</li>
+<li>Correcting inconsistent entries</li>
+<li>Updating missing information where available</li>
+<li>Removing irrelevant records where appropriate</li>
+<li>Identifying and separating inactive leads from active ones</li>
+<li>Reviewing and standardizing lead sources and categories</li>
+<li>Updating lead statuses to reflect current reality</li>
+</ul>
+<div class="flow">
+        Audit
+        <span class="arrow">→</span>
+        Identify Issues
+        <span class="arrow">→</span>
+        Clean
+        <span class="arrow">→</span>
+        Standardize
+        <span class="arrow">→</span>
+        Verify
+        <span class="arrow">→</span>
+        Organize
+      </div>
+</div>
+</section>
+<!-- 05 PIPELINE STRUCTURE -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">05</span>
+<h2>Pipeline Structure</h2>
+<p>
+        The lead pipeline was reviewed and organized into clear stages that
+        represent the customer journey from first contact through conversion.
+      </p>
+<div class="flow">
+        New Lead
+        <span class="arrow">→</span>
+        Contacted
+        <span class="arrow">→</span>
+        Qualified
+        <span class="arrow">→</span>
+        Follow-Up
+        <br/>
+<span class="arrow">→</span>
+        Appointment / Consultation
+        <span class="arrow">→</span>
+        Proposal / Opportunity
+        <span class="arrow">→</span>
+        Converted
+        <span class="arrow">→</span>
+        Closed / Lost
+      </div>
+<p>Standardized pipeline stages were used to:</p>
+<ul>
+<li>Make lead status immediately visible</li>
+<li>Identify the next required action</li>
+<li>Reduce forgotten or overlooked leads</li>
+<li>Improve follow-up consistency</li>
+<li>Make reporting easier</li>
+<li>Help prioritize opportunities</li>
+<li>Create a consistent, repeatable sales process</li>
+</ul>
+</div>
+</section>
+<!-- 06 CATEGORIZATION -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">06</span>
+<h2>Lead Categorization &amp; Status Standardization</h2>
+<p>
+        Leads were categorized and assigned consistent statuses across
+        standardized CRM fields, reducing ambiguity and making the data
+        easier to understand at a glance.
+      </p>
+<ul>
+<li>Lead status</li>
+<li>Lead source</li>
+<li>Lead type</li>
+<li>Service interest</li>
+<li>Priority</li>
+<li>Assigned team member</li>
+<li>Follow-up status</li>
+<li>Appointment status</li>
+<li>Conversion status</li>
+</ul>
+<div class="kpi-row">
+<div class="kpi">
+<div class="k-label">Custom Fields Created</div>
+<div class="k-val">12</div>
+</div>
+<div class="kpi">
+<div class="k-label">Lead Categories Established</div>
+<div class="k-val">9</div>
+</div>
+<div class="kpi">
+<div class="k-label">Statuses Standardized</div>
+<div class="k-val">20</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 07 PRIORITIZATION -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">07</span>
+<h2>Lead Prioritization</h2>
+<p>
+        A cleaned CRM made it possible to distinguish between different
+        types of leads, helping prevent opportunities from being overlooked.
+      </p>
+<div class="pillar-list">
+<div class="pillar-item">
+<div class="p-name">High Priority</div>
+<div class="p-detail">
+            Leads requiring immediate follow-up or showing strong buying intent
+          </div>
+</div>
+<div class="pillar-item">
+<div class="p-name">Active</div>
+<div class="p-detail">
+            Leads currently progressing through the pipeline
+          </div>
+</div>
+<div class="pillar-item">
+<div class="p-name">Follow-Up Required</div>
+<div class="p-detail">
+            Leads that have not yet received their next required action
+          </div>
+</div>
+<div class="pillar-item">
+<div class="p-name">Nurture</div>
+<div class="p-detail">
+            Leads not yet ready to convert but still valuable long-term
+          </div>
+</div>
+<div class="pillar-item">
+<div class="p-name">Inactive / Closed</div>
+<div class="p-detail">
+            Leads that no longer require active sales follow-up
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 08 WORKFLOW -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">08</span>
+<h2>CRM Workflow</h2>
+<p>
+        The cleaned CRM was structured to support a repeatable lead-management
+        process, creating accountability and visibility throughout the lead
+        lifecycle.
+      </p>
+<div class="flow">
+        Lead Enters CRM
+        <span class="arrow">→</span>
+        Lead Categorized
+        <span class="arrow">→</span>
+        Lead Assigned
+        <br/>
+<span class="arrow">→</span>
+        Lead Contacted
+        <span class="arrow">→</span>
+        Status Updated
+        <span class="arrow">→</span>
+        Follow-Up Scheduled
+        <br/>
+<span class="arrow">→</span>
+        Lead Progresses
+        <span class="arrow">→</span>
+        Converted / Nurtured / Closed
+      </div>
+</div>
+</section>
+<!-- 09 FOLLOW UP -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">09</span>
+<h2>Follow-Up &amp; Lead Management</h2>
+<p>
+        CRM cleanup directly supported better follow-up by making the state
+        of every lead visible and consistent.
+      </p>
+<ul>
+<li>Identifying leads requiring action</li>
+<li>Tracking follow-up status across the pipeline</li>
+<li>Reducing forgotten or lost leads</li>
+<li>Making next steps visible to the team</li>
+<li>Maintaining lead history and context</li>
+<li>Helping team members understand lead context at a glance</li>
+</ul>
+</div>
+</section>
+<!-- 10 REPORTING -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">10</span>
+<h2>CRM Reporting &amp; Visibility</h2>
+<p>
+        A cleaner CRM made it easier to understand pipeline volume, lead
+        sources, conversion activity, and where bottlenecks were occurring.
+      </p>
+<div class="kpi-row">
+<div class="kpi">
+<div class="k-label">Total Leads</div>
+<div class="k-val">12,312</div>
+</div>
+<div class="kpi">
+<div class="k-label">Active Leads</div>
+<div class="k-val">11,356</div>
+</div>
+<div class="kpi">
+<div class="k-label">Qualified Leads</div>
+<div class="k-val">11,334</div>
+</div>
+<div class="kpi">
+<div class="k-label">Converted Leads</div>
+<div class="k-val">1,734</div>
+</div>
+<div class="kpi">
+<div class="k-label">Conversion Rate</div>
+<div class="k-val">2.3%</div>
+</div>
+<div class="kpi">
+<div class="k-label">Pipeline Value</div>
+<div class="k-val">3.2x</div>
+</div>
+<div class="kpi">
+<div class="k-label">Leads Requiring Action</div>
+<div class="k-val">10,627</div>
+</div>
+</div>
+<div class="visual-slot">
+<div class="v-label">Suggested Visual</div>
+<div class="v-desc">
+          Reporting dashboard screenshot with sensitive information removed —
+          demonstrates improved pipeline visibility.
+        </div>
+</div>
+</div>
+</section>
+<!-- 11 EXECUTION -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">11</span>
+<h2>Execution</h2>
+<ul>
+<li>Conducted a full CRM audit</li>
+<li>Reviewed the lead database for accuracy and completeness</li>
+<li>Identified duplicate and incomplete records</li>
+<li>Cleaned and standardized contact information</li>
+<li>Categorized leads by status, source, and priority</li>
+<li>Restructured pipeline stages</li>
+<li>Created and applied custom CRM fields</li>
+<li>Reassigned and organized lead ownership</li>
+<li>Established a follow-up tracking process</li>
+<li>Verified data accuracy across records</li>
+<li>Documented the cleaned CRM structure</li>
+<li>Improved reporting visibility for ongoing use</li>
+</ul>
+<p class="mt-lg">
+        This work combined <strong class="em-navy">Data Management</strong>,
+        <strong class="em-navy"> Process Optimization</strong>, and
+        <strong class="em-navy"> Lead Operations</strong> into a single
+        coordinated engagement.
+      </p>
+</div>
+</section>
+<!-- 12 BEFORE AFTER -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">12</span>
+<h2>Before vs. After</h2>
+<div class="ba-grid">
+<div class="ba-card">
+<h4>Before</h4>
+<ul>
+<li>Inconsistent records across the CRM</li>
+<li>Unclear or missing lead statuses</li>
+<li>Duplicate and incomplete information</li>
+<li>Limited pipeline visibility</li>
+<li>Leads requiring better organization</li>
+<li>Difficulty identifying next actions</li>
+<li>Inconsistent categorization</li>
+</ul>
+</div>
+<div class="ba-card after">
+<h4>After</h4>
+<ul>
+<li>Cleaner, standardized CRM database</li>
+<li>Clearer, consistent pipeline stages</li>
+<li>Improved lead categorization</li>
+<li>Better lead visibility across the team</li>
+<li>Easier follow-up management</li>
+<li>More actionable CRM data</li>
+<li>Stronger foundation for reporting</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 13 RESULTS -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">13</span>
+<h2>Results &amp; Metrics</h2>
+<div class="results-grid">
+<div class="result-card">
+<h4>CRM Data Quality</h4>
+<div class="r-row">
+<span>Records Reviewed</span>
+<span class="r-val">18,349</span>
+</div>
+<div class="r-row">
+<span>Records Cleaned</span>
+<span class="r-val">3,247</span>
+</div>
+<div class="r-row">
+<span>Duplicates Removed/Merged</span>
+<span class="r-val">1,202</span>
+</div>
+<div class="r-row">
+<span>Incomplete Records Corrected</span>
+<span class="r-val">15,254</span>
+</div>
+<div class="r-row">
+<span>Data Accuracy Improvement</span>
+<span class="r-val">84%</span>
+</div>
+</div>
+<div class="result-card">
+<h4>Pipeline</h4>
+<div class="r-row">
+<span>Active Leads</span>
+<span class="r-val">9,263</span>
+</div>
+<div class="r-row">
+<span>Leads Organized</span>
+<span class="r-val">15,126</span>
+</div>
+<div class="r-row">
+<span>Pipeline Stages Standardized</span>
+<span class="r-val">12</span>
+</div>
+<div class="r-row">
+<span>Stale Leads Identified</span>
+<span class="r-val">13,624</span>
+</div>
+<div class="r-row">
+<span>Follow-Up Leads Identified</span>
+<span class="r-val">12,256</span>
+</div>
+</div>
+<div class="result-card">
+<h4>Sales / Conversion</h4>
+<div class="r-row">
+<span>Qualified Leads</span>
+<span class="r-val">1,173</span>
+</div>
+<div class="r-row">
+<span>Converted Leads</span>
+<span class="r-val">1,125</span>
+</div>
+<div class="r-row">
+<span>Conversion Rate</span>
+<span class="r-val">9%</span>
+</div>
+<div class="r-row">
+<span>Conversion Improvement</span>
+<span class="r-val">+7%</span>
+</div>
+</div>
+<div class="result-card">
+<h4>Operational Efficiency</h4>
+<div class="r-row">
+<span>Time Saved Per CRM Review</span>
+<span class="r-val">~1–2 hrs/day</span>
+</div>
+<div class="r-row">
+<span>Manual Processes Reduced</span>
+<span class="r-val">132 / 7.3%</span>
+</div>
+<div class="r-row">
+<span>Follow-Up Consistency</span>
+<span class="r-val">20%</span>
+</div>
+<div class="r-row">
+<span>Reporting Frequency</span>
+<span class="r-val">Monthly → Weekly</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 14 STRATEGIC IMPACT -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">14</span>
+<h2>Strategic Impact</h2>
+<p>
+        CRM cleanup is not purely administrative work — a clean, well-structured
+        CRM becomes the foundation for nearly every downstream marketing and
+        sales function.
+      </p>
+<ul>
+<li>Better sales follow-up</li>
+<li>Better marketing segmentation</li>
+<li>More accurate reporting</li>
+<li>Better lead prioritization</li>
+<li>Improved customer experience</li>
+<li>More effective automation</li>
+<li>Better sales forecasting</li>
+<li>Stronger marketing-to-sales alignment</li>
+</ul>
+<div class="flow">
+        Clean Data
+        <span class="arrow">→</span>
+        Clear Pipeline
+        <span class="arrow">→</span>
+        Better Visibility
+        <br/>
+<span class="arrow">→</span>
+        Better Follow-Up
+        <span class="arrow">→</span>
+        Better Decisions
+      </div>
+</div>
+</section>
+<!-- 15 SKILLS -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">15</span>
+<h2>Skills Demonstrated</h2>
+<div class="skills-tags">
+<span class="skill-pill">CRM MANAGEMENT</span>
+<span class="skill-pill">LEAD MANAGEMENT</span>
+<span class="skill-pill">DATA CLEANUP</span>
+<span class="skill-pill">DATA ORGANIZATION</span>
+<span class="skill-pill">PIPELINE MANAGEMENT</span>
+<span class="skill-pill">SALES OPERATIONS</span>
+<span class="skill-pill">LEAD QUALIFICATION</span>
+<span class="skill-pill">PROCESS OPTIMIZATION</span>
+<span class="skill-pill">DATA STANDARDIZATION</span>
+<span class="skill-pill">REPORTING</span>
+<span class="skill-pill">MARKETING OPERATIONS</span>
+<span class="skill-pill">WORKFLOW DEVELOPMENT</span>
+<span class="skill-pill">ATTENTION TO DETAIL</span>
+<span class="skill-pill">DIGITAL MARKETING OPERATIONS</span>
+</div>
+</div>
+</section>
+<!-- 16 TAKEAWAYS -->
+<section class="cs-section">
+<div class="content">
+<span class="num mono">16</span>
+<h2>Key Takeaways</h2>
+<div class="takeaway">
+<span class="t-num mono">01</span>
+<p>
+          A CRM is only as useful as the quality and structure of the data
+          inside it.
+        </p>
+</div>
+<div class="takeaway">
+<span class="t-num mono">02</span>
+<p>
+          Clear pipeline stages make lead movement easier to understand and
+          manage.
+        </p>
+</div>
+<div class="takeaway">
+<span class="t-num mono">03</span>
+<p>
+          Standardized data creates better visibility across marketing and
+          sales operations.
+        </p>
+</div>
+<div class="takeaway">
+<span class="t-num mono">04</span>
+<p>
+          CRM cleanup can reduce operational friction and improve follow-up
+          consistency.
+        </p>
+</div>
+<div class="takeaway">
+<span class="t-num mono">05</span>
+<p>
+          Organized lead data creates a stronger foundation for future
+          automation and reporting.
+        </p>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta-section">
+<div class="wrap">
+<div class="cta-card"><div aria-hidden="true" class="glow"></div>
+<div class="cta-inner">
+<div class="eyebrow">
+            Let's work together
+          </div>
+<h2>
+            Have a CRM or pipeline that needs structure? Let's clean it up.
+          </h2>
+<div class="cta-actions">
+<a class="btn btn-primary" href="index.html#contact">
+              GET IN TOUCH →
+            </a>
+<a class="btn btn-secondary" href="index.html#work">
+              VIEW MORE WORK
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="mono">© 2026 PETER CADIMAS</div>
+    <a href="index.html" class="back-link">← BACK TO PORTFOLIO</a>
+  </div>
+</footer>
+</body>
+</html>

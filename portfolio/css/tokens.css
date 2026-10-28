@@ -1,0 +1,41 @@
+/* ==========================================================================
+   tokens.css — design tokens. Change colors, fonts, spacing & easing HERE
+   and every page updates.
+   ========================================================================== */
+:root{
+  /* colors */
+  --navy:#0B1220;
+  --blue:#2563EB;
+  --sky:#38BDF8;
+  --bg:#F8FAFC;
+  --slate:#334155;
+  --white:#FFFFFF;
+  --border:#E2E8F0;
+  --border-strong:#CBD5E1;
+  --muted:#94A3B8;
+
+  /* layout */
+  --max:1160px;
+  --content-max:780px;
+  --gutter:32px;
+  --header-h:90px;
+  --section-y:110px;
+
+  /* type */
+  --font-sans:'Manrope',sans-serif;
+  --font-mono:'DM Mono',monospace;
+
+  /* motion (same curve as the GSAP 'pc' ease in js/config.js) */
+  --ease:cubic-bezier(.625,.05,0,1);
+  --ease-soft:cubic-bezier(.65,0,.35,1);
+  --dur-fast:.3s;
+  --dur:.6s;
+  --dur-slow:1s;
+
+  /* z-index scale */
+  --z-header:100;
+  --z-cursor:9999;
+  --z-transition:9998;
+}
+@media (max-width:760px){ :root{ --section-y:70px; } }
+@media (max-width:640px){ :root{ --gutter:20px; } }

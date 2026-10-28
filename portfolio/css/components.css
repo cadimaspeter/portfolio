@@ -1,0 +1,234 @@
+/* ==========================================================================
+   components.css — pieces shared by every page: header, nav, buttons,
+   eyebrow, CTA card, footer.
+   ========================================================================== */
+
+/* ---------- eyebrow / small marks ---------- */
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:12.5px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--blue);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.eyebrow::before{
+  content:"";
+  width:14px;height:1px;
+  background:var(--blue);
+  display:inline-block;
+}
+.sq{
+  width:6px;height:6px;
+  background:var(--blue);
+  display:inline-block;
+  flex-shrink:0;
+}
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:var(--z-header);
+  min-height:var(--header-h);
+  display:flex;
+  align-items:center;
+  background:rgba(248,250,252,.85);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.site-nav{
+  width:100%;
+  display:flex;
+  align-items:center;
+  padding:20px var(--gutter);
+}
+.logo{
+  font-weight:800;
+  font-size:16px;
+  letter-spacing:.02em;
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  position:relative;
+  z-index:2;
+}
+.avatar{
+  width:36px;height:36px;
+  border-radius:50%;
+  background:var(--border);
+  border:1px solid var(--border-strong);
+  flex-shrink:0;
+  object-fit:cover;
+}
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:36px;
+  margin-left:auto;
+  font-size:14px;
+  font-weight:600;
+  color:var(--slate);
+}
+.nav-cta{
+  margin-left:30px;
+  font-size:13px;
+  font-weight:700;
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  gap:6px;
+  transition:color var(--dur-fast);
+}
+.nav-cta:hover{color:var(--blue);}
+.back-link{
+  margin-left:auto;
+  font-size:13px;
+  font-weight:700;
+  color:var(--navy);
+  display:flex;
+  align-items:center;
+  gap:6px;
+  transition:color var(--dur-fast);
+}
+.back-link:hover{color:var(--blue);}
+.nav-toggle{
+  display:none;
+  margin-left:auto;
+  background:none;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:8px 14px;
+  font-size:13px;
+  font-weight:600;
+  color:var(--navy);
+  cursor:pointer;
+  position:relative;
+  z-index:2;
+}
+
+/* mobile menu: the same <ul> becomes a full-screen panel */
+@media (max-width:860px){
+  .nav-cta{display:none;}
+  .nav-toggle{display:block;}
+  .nav-links{
+    position:fixed;
+    inset:0;
+    z-index:1;
+    margin:0;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:22px;
+    padding:var(--header-h) var(--gutter) 40px;
+    background:var(--navy);
+    color:var(--white);
+    font-size:clamp(30px,9vw,46px);
+    font-weight:700;
+    letter-spacing:-.02em;
+    clip-path:inset(0 0 100% 0);
+    visibility:hidden;
+    transition:clip-path .8s var(--ease), visibility 0s linear .8s;
+  }
+  html.menu-open .site-header{
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+    transform:none !important;
+    background:transparent;
+    border-bottom-color:transparent;
+  }
+  html.menu-open .nav-links{
+    clip-path:inset(0 0 0 0);
+    visibility:visible;
+    transition:clip-path .8s var(--ease), visibility 0s;
+  }
+  html.menu-open .logo{color:var(--white);}
+  html.menu-open .nav-toggle{color:var(--white);border-color:rgba(255,255,255,.3);}
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:14px 26px;
+  border-radius:11px;
+  font-size:14px;
+  font-weight:600;
+  font-family:var(--font-sans);
+  cursor:pointer;
+  border:1px solid transparent;
+  transition:color .45s var(--ease), border-color .45s var(--ease);
+}
+.btn-primary{background:var(--navy);color:var(--white);--fill:var(--blue);}
+.btn-secondary{background:transparent;border-color:var(--navy);color:var(--navy);--fill:var(--navy);}
+.btn-secondary:hover,.btn-secondary:focus-visible{color:var(--white);}
+
+/* CTA buttons on navy */
+.cta-card .btn-primary{background:var(--blue);--fill:var(--sky);}
+.cta-card .btn-primary:hover,.cta-card .btn-primary:focus-visible{color:var(--navy);}
+.cta-card .btn-secondary{border-color:rgba(255,255,255,.3);color:var(--white);--fill:var(--white);}
+.cta-card .btn-secondary:hover,.cta-card .btn-secondary:focus-visible{color:var(--navy);}
+
+/* ---------- CTA card (home contact + case-study footer) ---------- */
+.cta-section{padding:20px 0 var(--section-y);}
+.cta-card{
+  position:relative;
+  overflow:hidden;
+  background:var(--navy);
+  color:var(--white);
+  border-radius:28px;
+  max-width:var(--max);
+  margin:0 auto;
+  padding:90px 60px;
+  text-align:center;
+}
+@media (max-width:760px){ .cta-card{padding:60px 28px;border-radius:20px;} }
+.cta-card .glow{
+  position:absolute;
+  bottom:-150px;left:50%;
+  margin-left:-250px;
+  width:500px;height:400px;
+  background:radial-gradient(circle,rgba(37,99,235,.25),rgba(56,189,248,0) 70%);
+  pointer-events:none;
+}
+.cta-inner{position:relative;z-index:1;}
+.cta-card .eyebrow{justify-content:center;color:var(--sky);}
+.cta-card .eyebrow::before{background:var(--sky);}
+.cta-card h2{
+  font-size:clamp(30px,5vw,52px);
+  line-height:1.1;
+  font-weight:800;
+  color:var(--white);
+  margin:20px auto 28px;
+  max-width:640px;
+  letter-spacing:-.01em;
+}
+.cta-card p{
+  color:var(--muted);
+  font-size:16px;
+  max-width:480px;
+  margin:-8px auto 36px;
+}
+.cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+
+/* ---------- footer ---------- */
+.site-footer{padding:50px 0 40px;}
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+}
+.footer-inner .mono{font-size:12.5px;color:var(--slate);}
+.footer-links{display:flex;gap:24px;font-size:13.5px;font-weight:600;}
+.footer-links a{transition:color var(--dur-fast);}
+.footer-links a:hover{color:var(--blue);}

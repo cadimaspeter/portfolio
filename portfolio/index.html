@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peter Cadimas — Digital Marketing &amp; Content Specialist</title>
+<meta name="description" content="Peter Cadimas — Creative Content. Strategic Marketing. Digital Solutions.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<meta name="theme-color" content="#0B1220">
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- styles: shared first, page-specific last -->
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/motion.css">
+<link rel="stylesheet" href="css/home.css">
+
+<!-- flags JS as available + failsafe that lifts the loading cover after 6s -->
+<script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('fallback')},6000);</script>
+
+<!-- scripts: libraries, then our modules (order matters) -->
+<script defer src="js/vendor/gsap.min.js"></script>
+<script defer src="js/vendor/ScrollTrigger.min.js"></script>
+<script defer src="js/vendor/SplitText.min.js"></script>
+<script defer src="js/vendor/CustomEase.min.js"></script>
+<script defer src="js/vendor/lenis.min.js"></script>
+<script defer src="js/config.js"></script>
+<script defer src="js/core.js"></script>
+<script defer src="js/page-transition.js"></script>
+<script defer src="js/preloader.js"></script>
+<script defer src="js/text-reveal.js"></script>
+<script defer src="js/scroll-effects.js"></script>
+<script defer src="js/interactions.js"></script>
+<script defer src="js/carousel.js"></script>
+<script defer src="js/main.js"></script>
+</head>
+<body class="home">
+<header class="site-header">
+  <nav class="site-nav wrap" aria-label="Main">
+    <div class="logo"><img src="assets/img/avatar.jpg" class="avatar" alt="Peter Cadimas" width="36" height="36"><a href="#hero">PETER CADIMAS</a></div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">MENU</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">LET'S WORK →</a>
+  </nav>
+</header>
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="glow" data-parallax="14" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div class="eyebrow">DIGITAL MARKETING × CONTENT × TECHNOLOGY</div>
+      <h1>I create digital experiences that help businesses show up, stand out, and <em>grow.</em></h1>
+      <p class="hero-lede">Digital Marketing &amp; Content Specialist specializing in social media, content creation, video, email marketing, web, and digital operations.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">VIEW MY WORK →</a>
+        <a href="#contact" class="btn btn-secondary">LET'S CONNECT</a>
+      </div>
+    </div>
+
+    <div class="wrap" hidden>
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="tag">01 / Social</div>
+          <div class="body">
+            <a href="https://www.instagram.com/expertsinwellness/" target="_blank" rel="noopener" class="v-link"> Social Media I Handled → </a> </div>
+          <div class="foot">Content Creation</div>
+        </div>
+        <div class="visual-card">
+          <div class="tag">02 / Marketing</div>
+          <div class="body">
+                <div class="v-sample">SAMPLE</div>
+          </div>
+          <div class="foot">Email Sequence</div>
+        </div>
+        <div class="visual-card">
+          <div class="tag">03 / Digital</div>
+          <div class="body">
+                <div class="v-sample">SAMPLE</div>
+          </div>
+          <div class="foot">Website Build</div>
+        </div>
+      </div>
+      <div class="visual-footer">Content / Marketing / Digital</div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-group"><span class="marquee-item">Content</span><span class="marquee-item">Marketing</span><span class="marquee-item">Digital</span><span class="marquee-item">Support</span><span class="marquee-item">Social Media</span><span class="marquee-item">Email</span><span class="marquee-item">Web</span><span class="marquee-item">CRM</span></div>
+      <div class="marquee-group"><span class="marquee-item">Content</span><span class="marquee-item">Marketing</span><span class="marquee-item">Digital</span><span class="marquee-item">Support</span><span class="marquee-item">Social Media</span><span class="marquee-item">Email</span><span class="marquee-item">Web</span><span class="marquee-item">CRM</span></div>
+    </div>
+  </section>
+  <!-- PILLARS -->
+  <section class="section pillars-section" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">What I bring</div>
+          <h2>Creative, strategic, and technical — under one roof.</h2>
+        </div>
+        <div class="desc">Four pillars that cover the full lifecycle of a brand's digital presence, from the content itself to the systems running behind it.</div>
+      </div>
+      <div class="carousel" id="carousel" data-carousel data-cursor="DRAG">
+        <div class="carousel-track">
+          <div class="slide">
+            <div class="num-bg">01</div>
+            <div class="slide-eyebrow"><span class="num mono">01</span> Pillar</div>
+            <h3>Content</h3>
+            <p class="sub">Social Media · Graphics · Video</p>
+            <div class="media-row">
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Reel</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Carousel Post</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Story</span></div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="num-bg">02</div>
+            <div class="slide-eyebrow"><span class="num mono">02</span> Pillar</div>
+            <h3>Marketing</h3>
+            <p class="sub">Email · Lead Generation · Campaigns</p>
+            <div class="media-row">
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Email</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Lead Generation</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Campaign</span></div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="num-bg">03</div>
+            <div class="slide-eyebrow"><span class="num mono">03</span> Pillar</div>
+            <h3>Digital</h3>
+            <p class="sub">Web · CRM · Digital Systems</p>
+            <div class="media-row">
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Landing Page</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">CRM</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Automation</span></div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="num-bg">04</div>
+            <div class="slide-eyebrow"><span class="num mono">04</span> Pillar</div>
+            <h3>Support</h3>
+            <p class="sub">VA · Administration · Technical Support</p>
+            <div class="media-row">
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">VA</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Administration</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Technical Support</span></div>
+            </div>
+          </div>
+          <!-- clone of slide 1, appended so the loop back to start is seamless -->
+          <div class="slide" aria-hidden="true">
+            <div class="num-bg">01</div>
+            <div class="slide-eyebrow"><span class="num mono">01</span> Pillar</div>
+            <h3>Content</h3>
+            <p class="sub">Social Media · Graphics · Video</p>
+            <div class="media-row">
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Reel</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Carousel Post</span></div>
+              <div class="media-item"><div class="media-frame"></div><span class="media-tag">Story</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <button class="dot active" data-i="0" aria-label="Go to pillar 1"></button>
+          <button class="dot" data-i="1" aria-label="Go to pillar 2"></button>
+          <button class="dot" data-i="2" aria-label="Go to pillar 3"></button>
+          <button class="dot" data-i="3" aria-label="Go to pillar 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Selected Work</div>
+          <h2>A sample of recent projects.</h2>
+        </div>
+        <div class="desc">Replace these with your real case studies — client, challenge, approach, and outcome.</div>
+      </div>
+      <div class="project-grid">
+        <div class="card" data-cursor="VIEW">
+          <div class="num mono">01</div>
+          <div class="cat">Social Media Management</div>
+          <h3>Health &amp; Wellness Content Strategy</h3>
+          <p class="desc">Social media content planning, graphic design, Reels, scheduling, and analytics for a wellness brand's Instagram and Facebook presence.</p>
+          <div class="tools">
+            <span class="tool-tag">CANVA</span>
+            <span class="tool-tag">META</span>
+            <span class="tool-tag">INSTAGRAM</span>
+          </div>
+          <a href="case-study-health-and-wellness.html" class="card-cta">VIEW CASE STUDY →</a>
+        </div>
+        <div class="card" data-cursor="VIEW">
+          <div class="num mono">02</div>
+          <div class="cat">Email Marketing</div>
+          <h3>Lifecycle Email Campaign Rebuild</h3>
+          <p class="desc">Rebuilt welcome, nurture, and promotional email flows to improve open rates and keep the list warm between launches.</p>
+          <div class="tools">
+            <span class="tool-tag">KLAVIYO</span>
+            <span class="tool-tag">MAILCHIMP</span>
+            <span class="tool-tag">BREVO</span>
+          </div>
+          <a href="case-study-lifestyle-email-campaign-rebuild.html" class="card-cta">VIEW CASE STUDY →</a>
+        </div>
+        <div class="card" data-cursor="VIEW">
+          <div class="num mono">03</div>
+          <div class="cat">Web Development</div>
+          <h3>Landing Page &amp; Site Refresh</h3>
+          <p class="desc">Designed and built a conversion-focused landing page, cleaning up copy, layout, and load speed for a service-based business.</p>
+          <div class="tools">
+            <span class="tool-tag">WORDPRESS</span>
+            <span class="tool-tag">WIX</span>
+            <span class="tool-tag">KAJABI</span>
+          </div>
+          <a href="case-study-landing-page-reset.html" class="card-cta">VIEW CASE STUDY →</a>
+        </div>
+        <div class="card" data-cursor="VIEW">
+          <div class="num mono">04</div>
+          <div class="cat">CRM &amp; Digital Operations</div>
+          <h3>Lead Pipeline &amp; CRM Cleanup</h3>
+          <p class="desc">Organized and maintained a sales pipeline, set up lead capture workflows, and kept records clean and current across tools.</p>
+          <div class="tools">
+            <span class="tool-tag">PIPEDRIVE</span>
+            <span class="tool-tag">SPHERE CRM</span>
+            <span class="tool-tag">TRELLO</span>
+          </div>
+          <a href="case-study-crm-cleanup.html" class="card-cta">VIEW CASE STUDY →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">About</div>
+          <h2>A digital marketing professional with creative, technical, and operational skills.</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <div class="about-photo-wrap">
+            <div class="about-photo" data-reveal="clip">
+              <img src="assets/img/headshot.jpg" alt="Portrait of Peter Cadimas" width="900" height="900" loading="lazy" data-parallax="7">
+            </div>
+          </div>
+          <p>I combine creativity, marketing, and technology to help businesses build and manage their digital presence.</p>
+          <p>My background sits at the intersection of <strong>computer engineering</strong> and <strong>digital marketing</strong> — which means I don't just create the content, I understand the systems, CRMs, and platforms that make it work.</p>
+          <p>I turn ideas into content, campaigns, and digital experiences.</p>
+        </div>
+        <div class="stat-list">
+          <div class="stat-row">
+            <div class="label">Dec 2025 – Jul 2026</div>
+            <div class="val">Digital Marketing VA · SunnyHue Creatives</div>
+          </div>
+          <div class="stat-row">
+            <div class="label">Jun 2024 – Dec 2025</div>
+            <div class="val">Tech Support · Calvary Chapel Dumaguete</div>
+          </div>
+          <div class="stat-row">
+            <div class="label">Jan 2024 – May 2024</div>
+            <div class="val">Administrative Assistant · NORECO II</div>
+          </div>
+          <div class="stat-row">
+            <div class="label">Education, 2024</div>
+            <div class="val">BS Computer Engineering · NORSU</div>
+          </div>
+          <div class="stat-row">
+            <div class="label">Availability</div>
+            <div class="val available">Open to New Projects</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Toolkit</div>
+          <h2>What I work with.</h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <div class="eyebrow"><span class="sq"></span>Social</div>
+          <div class="items">Instagram · Facebook · TikTok · LinkedIn · YouTube · Pinterest · X</div>
+        </div>
+        <div class="skill-block">
+          <div class="eyebrow"><span class="sq"></span>Content</div>
+          <div class="items">Canva · Video Editing · Reels · Copywriting · Content Strategy</div>
+        </div>
+        <div class="skill-block">
+          <div class="eyebrow"><span class="sq"></span>Marketing</div>
+          <div class="items">Mailchimp · Brevo · Klaviyo · Lead Generation</div>
+        </div>
+        <div class="skill-block">
+          <div class="eyebrow"><span class="sq"></span>CRM</div>
+          <div class="items">Pipedrive · Sphere CRM · FluentCRM</div>
+        </div>
+        <div class="skill-block">
+          <div class="eyebrow"><span class="sq"></span>Web</div>
+          <div class="items">WordPress · Wix · Kajabi · Landing Pages</div>
+        </div>
+        <div class="skill-block">
+          <div class="eyebrow"><span class="sq"></span>Operations</div>
+          <div class="items">Trello · Google Drive · Dropbox</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section class="cta-section" id="contact">
+    <div class="wrap">
+      <div class="cta-card">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="cta-inner">
+          <div class="eyebrow">Let's work together</div>
+          <h2>Have a project? Let's build your digital presence.</h2>
+          <p>Open to freelance, contract, and full-time opportunities in digital marketing, content, and web.</p>
+          <div class="cta-actions">
+            <a href="mailto:cadimaspeter@gmail.com" class="btn btn-primary">EMAIL ME →</a>
+            <a href="https://www.linkedin.com/in/peter-cadimas-845663264/" class="btn btn-secondary">VIEW LINKEDIN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="mono">© 2026 PETER CADIMAS</div>
+    <div class="footer-links">
+      <a href="mailto:cadimaspeter@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/peter-cadimas-845663264/">LinkedIn</a>
+      <a href="https://www.instagram.com/petra.petraaa/">Instagram</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
